@@ -1,0 +1,61 @@
+<!-- Start Breadcrumbs -->
+<app-breadcrumb title="Google Maps" [breadcrumbItems]="breadCrumbItems"></app-breadcrumb>
+<!-- End Breadcrumbs -->
+
+
+<div class="row">
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title mb-0">Markers</h4>
+            </div><!-- end card header -->
+            <div class="card-body">
+                <p-gmap [options]="markers" [overlays]="markersoverlays" [style]="{'width':'100%','height':'320px'}" ></p-gmap>
+            </div><!-- end card-body -->
+        </div><!-- end card -->
+    </div>
+    <!-- end col -->
+
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title mb-0">Overlays</h4>
+            </div><!-- end card header -->
+
+            <div class="card-body">
+                <p-gmap [options]="markers" [overlays]="overlays" [style]="{'width':'100%','height':'320px'}" ></p-gmap>
+            </div><!-- end card-body -->
+        </div><!-- end card -->
+    </div>
+    <!-- end col -->
+</div>
+<!-- end row -->
+
+<div class="row">
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title mb-0">Street View Panoramas</h4>
+            </div><!-- end card header -->
+
+            <div class="card-body">
+                <p-gmap [options]="panorama" [overlays]="overlays" [style]="{'width':'100%','height':'320px'}" ></p-gmap>
+            </div><!-- end card-body -->
+        </div><!-- end card -->
+    </div>
+    <!-- end col -->
+
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title mb-0">Map Types</h4>
+            </div><!-- end card header -->
+
+            <div class="card-body">
+                <p-gmap [options]="maptype" [overlays]="overlays" [style]="{'width':'100%','height':'320px'}" ></p-gmap>
+            </div><!-- end card-body -->
+        </div><!-- end card -->
+    </div>
+    <!-- end col -->
+</div>
+<!-- end row -->
